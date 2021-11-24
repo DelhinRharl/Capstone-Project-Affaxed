@@ -442,18 +442,23 @@ h5 {
   display: flex;
   padding: 1%;
 }
+
 .transport {
   margin-right: 2%;
 }
+
 .spotify {
   margin-right: 2%;
 }
+
 .drinks {
   margin-right: 2%;
 }
+
 .air {
   margin-right: 2%;
 }
+
 .footer {
   display: flex;
   width: 100%;
