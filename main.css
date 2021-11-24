@@ -78,6 +78,10 @@ body {
   font-size: 2.5rem;
 }
 
+.top-bar {
+  display: none;
+}
+
 .my-nav {
   display: flex;
   position: fixed;
@@ -100,10 +104,11 @@ body {
   align-items: center;
   border-style: solid;
   border-color: #d3d3d3;
-  border-width: 2px;
+  border-width: 0;
   background-image: url(./images/gradienta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 90vh;
 }
 
 .about-title {
@@ -162,6 +167,7 @@ body {
   background-size: cover;
   padding: 5%;
   margin-top: 2.25rem;
+  height: 90vh;
 }
 
 .subtitle {
@@ -480,6 +486,7 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
+  html,
   body {
     margin: 0;
     padding: 0;
@@ -504,6 +511,8 @@ h5 {
     background-color: #fff;
     align-items: center;
     display: flex;
+    position: fixed;
+    top: 1.875rem;
   }
 
   .nav-bar ul {
@@ -519,6 +528,28 @@ h5 {
   .nav-bar ul li a {
     text-decoration: none;
     color: #272a31;
+  }
+
+  .top-bar {
+    width: 100%;
+    height: 2rem;
+    background-color: #272a31;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .insta {
+    position: fixed;
+    right: 3.125rem;
+    top: 0;
+  }
+
+  .top-bar p {
+    position: fixed;
+    right: 6.125rem;
+    color: #d3d3d3;
   }
 
   .book {
@@ -545,6 +576,7 @@ h5 {
 
   .description {
     color: #d3d3d3;
+    width: 18.75rem;
   }
 
   .hero-section {
@@ -554,6 +586,7 @@ h5 {
     background-position: center;
     padding: 5%;
     margin-top: 2.25rem;
+    height: 80vh;
   }
 
   .program {
@@ -616,11 +649,14 @@ h5 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .past-festivals img {
-    width: 90%;
-    height: 60%;
+  .past-festivals {
     display: flex;
-    flex-direction: column;
+  }
+
+  .past-festivals img {
+    width: 400px;
+    height: 200px;
+    display: flex;
   }
 
   .about-hero-section {
