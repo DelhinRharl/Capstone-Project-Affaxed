@@ -309,6 +309,15 @@ body {
   width: 50px;
   height: 50px;
 }
+.footera {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.footera img {
+  width: 50px;
+  height: 50px;
+}
 
 .headliners img:hover {
   border-left: #ec5242 solid 5px;
@@ -723,12 +732,19 @@ h5 {
     display: flex;
     justify-content: space-around;
     background-color: #272a31;
+    border-top: #ec5242 solid 0.125rem;
   }
 
   .footer .part2 {
+    color: #272a31;
+  }
+  .footera .part3 {
     color: #d3d3d3;
   }
-
+  .footera img {
+    width: 50px;
+    height: 50px;
+  }
   .logo {
     padding-top: 3.125rem;
   }
