@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://delhinrharl.github.io/Capstone-Project-Affaxed/)
 
 To get a local copy up and running follow these simple example steps.
 
