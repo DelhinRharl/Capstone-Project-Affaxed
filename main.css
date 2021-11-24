@@ -287,7 +287,7 @@ body {
 
 .partners img {
   width: 100px;
-  height: 50%;
+  height: 70%;
   object-fit: contain;
   padding: 1%;
 }
@@ -442,7 +442,18 @@ h5 {
   display: flex;
   padding: 1%;
 }
-
+.transport {
+  margin-right: 2%;
+}
+.spotify {
+  margin-right: 2%;
+}
+.drinks {
+  margin-right: 2%;
+}
+.air {
+  margin-right: 2%;
+}
 .footer {
   display: flex;
   width: 100%;
@@ -495,6 +506,7 @@ h5 {
 
   .nav-bar ul li a {
     text-decoration: none;
+    color: #272a31;
   }
 
   .book {
