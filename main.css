@@ -309,11 +309,13 @@ body {
   width: 50px;
   height: 50px;
 }
+
 .footera {
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
+
 .footera img {
   width: 50px;
   height: 50px;
@@ -738,13 +740,16 @@ h5 {
   .footer .part2 {
     color: #272a31;
   }
+
   .footera .part3 {
     color: #d3d3d3;
   }
+
   .footera img {
     width: 50px;
     height: 50px;
   }
+
   .logo {
     padding-top: 3.125rem;
   }
