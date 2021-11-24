@@ -101,11 +101,17 @@ body {
   border-style: solid;
   border-color: #d3d3d3;
   border-width: 2px;
+  background-image: url(./images/gradienta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-title {
   width: 70%;
   height: 30%;
+}
+.about-title p {
+  color: #d3d3d3;
 }
 
 .bandit h1 {
@@ -117,6 +123,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 5%;
+  color: #d3d3d3;
 }
 
 .logo-description {
