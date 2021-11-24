@@ -4,7 +4,8 @@
 
 > The project is the last project for the first Module of the microverse coding school. It's a simple annual music festival website where you can get information and also get a link to book a ticket
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/screenshot.png)
+![screenshot](./images/screenshotd.png)
 
 ## Built With
 

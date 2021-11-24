@@ -89,6 +89,7 @@ body {
 
 .nav-bar {
   display: none;
+  color: #272a31;
 }
 
 .about-hero-section {
@@ -536,6 +537,7 @@ h5 {
     flex-direction: column;
     justify-content: space-around;
   }
+
   .program p {
     color: #d3d3d3;
   }
