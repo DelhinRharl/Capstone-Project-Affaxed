@@ -1,0 +1,756 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 1.25rem;
+}
+
+.my-logo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.my-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.my-logo h6 {
+  font-size: 1rem;
+  margin: 0;
+  width: 70%;
+}
+
+.hamburger {
+  width: 10%;
+}
+
+.hamburger img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: 0;
+  float: right;
+}
+
+#mcontainer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #ec5242;
+  opacity: 1;
+  top: 0;
+  display: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7.25rem;
+  z-index: 5;
+}
+
+.modal a {
+  text-decoration: none;
+  color: #d3d3d3;
+  font-size: 2rem;
+}
+
+.times {
+  position: fixed;
+  float: right;
+  right: 10%;
+  top: 2rem;
+  font-size: 2.5rem;
+}
+
+.top-bar {
+  display: none;
+}
+
+.my-nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+
+.nav-bar {
+  display: none;
+  color: #272a31;
+}
+
+.about-hero-section {
+  padding: 4%;
+  margin-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-width: 0;
+  background-image: url(./images/gradienta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+.about-title {
+  width: 70%;
+  height: 30%;
+}
+
+.about-title p {
+  color: #d3d3d3;
+}
+
+.bandit h1 {
+  color: #ec5242;
+  font-size: 2.5rem;
+}
+
+.acontact {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  color: #d3d3d3;
+}
+
+.logo-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  border-style: solid;
+  border-radius: 0.1875rem;
+  border-color: #ec5242;
+}
+
+.logo-description img {
+  width: 8.25rem;
+  height: 8.25rem;
+}
+
+.past-festivals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.past-festivals img {
+  width: 22.5rem;
+  height: 11.25rem;
+  border-radius: 0.5rem;
+}
+
+.hero-section {
+  background-image: url(./images/gradienta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  margin-top: 2.25rem;
+  height: 90vh;
+}
+
+.subtitle {
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.title {
+  color: #ec5242;
+  font-weight: 800;
+  font-size: 30px;
+
+  /* webkit-text-fill-color: #ec5242;
+  -webkit-background-clip: text; */
+}
+
+.description {
+  color: #d3d3d3;
+}
+
+.date {
+  color: #d3d3d3;
+}
+
+.venue {
+  color: #d3d3d3;
+}
+
+.program {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #272a31;
+  background-size: 15px 15px;
+  background-image: radial-gradient(transparent 8px, #000, #242121);
+  background-repeat: repeat;
+}
+
+.program p {
+  color: #d3d3d3;
+}
+
+.program h6 {
+  color: #ec5242;
+  font-size: 1rem;
+}
+
+.activities {
+  color: #ec5242;
+}
+
+.act-one {
+  width: 100%;
+  height: 20%;
+  background-color: #363a42;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 0.15fr 0.25fr 0.6fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.act-two {
+  width: 100%;
+  height: 20%;
+  background-color: #363a42;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 0.15fr 0.25fr 0.6fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.act-three {
+  width: 100%;
+  height: 20%;
+  background-color: #363a42;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 0.15fr 0.25fr 0.6fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.act-four {
+  width: 100%;
+  height: 20%;
+  background-color: #363a42;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 0.15fr 0.25fr 0.6fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.act-five {
+  width: 100%;
+  height: 20%;
+  background-color: #363a42;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 0.15fr 0.25fr 0.6fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ticket {
+  background-color: #ec5242;
+  width: 12rem;
+  height: 3rem;
+  color: #d3d3d3;
+  border: none;
+  border-radius: 0.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.ticket:hover {
+  width: 12.5rem;
+  height: 3.5rem;
+}
+
+.headliners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners img {
+  width: 100px;
+  height: 70%;
+  object-fit: contain;
+  padding: 1%;
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
+}
+
+.footera {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footera img {
+  width: 50px;
+  height: 50px;
+}
+
+.headliners img:hover {
+  border-left: #ec5242 solid 5px;
+  cursor: pointer;
+  border-right: #272a31 solid 5px;
+  border-top: #272a31 solid 5px;
+  border-bottom: #ec5242 solid 5px;
+}
+
+.artistss {
+  font-size: 1.25rem;
+  color: #272a31;
+  font-weight: 800;
+}
+
+.headliners ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#img1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 1.25rem;
+}
+
+#img2 {
+  width: 180px;
+  height: 150px;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+}
+
+#img3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 1.25rem;
+}
+
+#img4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 1.25rem;
+}
+
+#img5 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 1.25rem;
+}
+
+#img6 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 1.25rem;
+}
+
+.headliners h4,
+h5 {
+  margin: 5px;
+}
+
+#h1 {
+  color: #ec5242;
+  font-style: italic;
+}
+
+#h2 {
+  color: #ec5242;
+  font-style: italic;
+}
+
+#h3 {
+  color: #ec5242;
+  font-style: italic;
+}
+
+#h4 {
+  color: #ec5242;
+  font-style: italic;
+}
+
+#h5 {
+  color: #ec5242;
+  font-style: italic;
+}
+
+#h6 {
+  color: #ec5242;
+  font-style: italic;
+}
+
+#awname {
+  padding-left: 0.8rem;
+}
+
+#dgname {
+  padding-left: 0.8rem;
+}
+
+#mname {
+  padding-left: 0.8rem;
+}
+
+#aname {
+  padding-left: 0.8rem;
+}
+
+#dname {
+  padding-left: 0.8rem;
+}
+
+#cname {
+  padding-left: 0.8rem;
+}
+
+.twenty {
+  font-weight: bold;
+}
+
+.nine {
+  font-weight: bold;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272a31;
+  height: 100%;
+  width: 100%;
+}
+
+.partner h3 {
+  color: #d3d3d3;
+}
+
+.partners {
+  display: flex;
+  padding: 1%;
+}
+
+.transport {
+  margin-right: 2%;
+}
+
+.spotify {
+  margin-right: 2%;
+}
+
+.drinks {
+  margin-right: 2%;
+}
+
+.air {
+  margin-right: 2%;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  padding-left: 3rem;
+  padding-top: 2.125rem;
+  margin-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-bar {
+    display: flex;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .my-logo {
+    width: 50%;
+  }
+
+  .my-nav {
+    width: 100%;
+    height: 3.125rem;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 1.875rem;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav-bar ul li {
+    list-style: none;
+  }
+
+  .nav-bar ul li a {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .top-bar {
+    width: 100%;
+    height: 2rem;
+    background-color: #272a31;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .top-bar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    position: relative;
+    right: 0;
+  }
+
+  .top-bar ul li {
+    list-style: none;
+  }
+
+  .top-bar ul li a {
+    text-decoration: none;
+    color: #d3d3d3;
+  }
+
+  .book {
+    color: #ec5242;
+    text-align: center;
+    letter-spacing: 0.07em;
+    background-color: transparent;
+    border: 0.0625rem;
+    border-style: solid;
+    border-color: #272a31;
+    border-radius: 0.5rem;
+    width: 8.25rem;
+    height: 2.5rem;
+    margin-top: 0.3125rem;
+  }
+
+  .subtitle {
+    color: #d3d3d3;
+  }
+
+  .date h3 {
+    color: #ec5242;
+  }
+
+  .description {
+    color: #d3d3d3;
+    width: 18.75rem;
+  }
+
+  .hero-section {
+    background-image: url(./images/gradienta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    margin-top: 2.25rem;
+    height: 80vh;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .program p {
+    color: #d3d3d3;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .act-one {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    padding: 20px;
+    margin-right: 1.25rem;
+  }
+
+  .act-two {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 1.25rem;
+  }
+
+  .act-three {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 1.25rem;
+  }
+
+  .act-four {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 1.25rem;
+  }
+
+  .act-five {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 1.25rem;
+  }
+
+  .headliners {
+    display: flex;
+  }
+
+  .headliners ul {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .past-festivals {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pastimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pastimg .nairobi {
+    margin-right: 0;
+  }
+
+  .twenty {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 1000;
+    position: relative;
+    right: 232px;
+    margin-top: 0;
+  }
+
+  .nine {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 1000;
+    position: relative;
+    right: 232px;
+    margin-top: 0;
+  }
+
+  .past-festivals img {
+    width: 350px;
+    height: 175px;
+    display: flex;
+  }
+
+  .about-hero-section {
+    background-image: url(./images/gradienta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-title p {
+    color: #d3d3d3;
+    z-index: 3;
+  }
+
+  .acontact {
+    color: #d3d3d3;
+    z-index: 3;
+  }
+
+  .footera {
+    display: flex;
+    justify-content: space-around;
+    background-color: #272a31;
+    border-top: #ec5242 solid 0.125rem;
+  }
+
+  .footer .part2 {
+    color: #272a31;
+  }
+
+  .footera .part3 {
+    color: #d3d3d3;
+  }
+
+  .footera img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    padding-top: 3.125rem;
+  }
+}
